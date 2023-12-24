@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body_content{
+    height: calc(100% - 60px);
+    width: 100%;
+}
+
+.title{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu{
+    height: calc(100vh - 190px);
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu_cont{
+    margin-top: 50px;
+    width: 350px;
+    height: 250px;
+    background-color: #FAEED1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.menu_name{
+    width: 200px;
+    height: 40px;
+    background-color: #607274;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.menu_description{
+    height: 360px;
+    margin-top: 40px;
+    display: flex;
+    padding: 15px;
+    text-indent: 5rem;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .body_content {
+        height: auto;
+    }
+
+    .menu {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .menu_cont {
+        width: 400px;
+        height: 150px;
+        margin-top: 30px;
+    }
+
+    .menu_name {
+        width: 100px;
+        height: 20px;
+    }
+
+    .menu_description {
+        height: auto;
+        margin-top: 20px;
+        text-indent: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .body_content {
+        height: auto;
+    }
+
+    .menu {
+        height: auto;
+        width: 50%;
+        margin: 0 auto 0;
+        flex-direction: column;
+    }
+
+    .menu_cont {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .menu_name {
+        width: 100%;
+        height: 40px;
+    }
+
+    .menu_description {
+        height: fit-content;
+        text-indent: 5rem;
+    }
+}
